@@ -1,0 +1,13 @@
+repos:
+  - repo: local
+    hooks:
+      - id: pylint
+        name: pylint
+        entry: pylint
+        language: system
+        types: [python]
+        args: 
+          - "-rn"  # Não mostrar relatório completo
+          - "-sn"  # Não mostrar mensagens de convenção
+          - "--rcfile=.pylintrc"  # Usar arquivo de configuração personalizado
+          - "--load-plugins=pylint.extensions.docparams"  # Carregar plugin para checagem de docstrings
