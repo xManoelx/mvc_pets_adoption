@@ -1,6 +1,14 @@
 {
     "python-envs.pythonProjects": [],
 
+    // Configura o linting para Python usando pylint
     "python.linting.Enabled": true,
-    "python.linting.pylintEnabled": true
+    "python.linting.pylintEnabled": true, 
+
+    // Exclui os arquivos Pycache e arquivos .pyc do explorador de arquivos
+    "files.exclude": {
+        "**/.pyc": {"when": "$(basename).py"},
+        "**/__pycache__": true,
+        "**/.pytest_cache": true
+    }
 }
