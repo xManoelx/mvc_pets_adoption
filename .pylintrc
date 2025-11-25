@@ -7,6 +7,8 @@ disable=    # Desabilitar mensagens específicas do pylint
       w0703,  # broad-except
       C0209,  # logging-f-string-interpolation
       E0015,  # no-member
+      C0321,  # multiple-statements
+      C0303,  # trailing-whitespace
 
 # Analyse import fallback blocks. This can be used to support both Python 2 and
 # 3 compatible code, which means that the block might have code that exists
