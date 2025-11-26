@@ -3,7 +3,7 @@ from src.models.sqlite.settings.connection import db_connection_handler
 from .pets_repository import PetsRepository
 from .people_repository import PeopleRepository
 
-db_connection_handler.connect_to_db()
+# db_connection_handler.connect_to_db()
 
 # Teste para listar pets
 @pytest.mark.skip(reason="interacao com o banco de dados")
