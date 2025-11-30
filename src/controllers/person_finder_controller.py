@@ -1,15 +1,16 @@
 from typing import Dict 
 from src.models.sqlite.interfaces.people_repository import PeopleRepositoryInterface
 from src.models.sqlite.entities.people import PeopleTable
+from .interface.person_finder_controller import PersonFinderControllerInterface
 
-class PersonFinderController:
+class PersonFinderController(PersonFinderControllerInterface):
     # Metodo construtor
     def __init__(self, people_repository: PeopleRepositoryInterface) -> None:
         self.__people_repository = people_repository
 
     # Metodo para encontrar uma pessoa pelo ID
-    def find (self, person_id: int) -> Dict:
-        person = self.__find_person_in_db(person_id)
+    def find (self, person_info: int) -> Dict:
+        person = self.__find_person_in_db(person_info)
         response = self.__format_response(person)
         return response
 
