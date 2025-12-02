@@ -9,4 +9,7 @@ class PersonCreatorView(ViewInterface):
 
     # Metodo abstrato para lidar com a requisicao HTTP
     def handle(self, http_request: HttpRequest) -> HttpResponse:
-        pass
+        person_info = http_request.body
+        body_response = self.controller.create(person_info)
+
+        return HttpResponse(status_code=201, body=body_response)
