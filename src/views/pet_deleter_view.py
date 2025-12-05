@@ -9,7 +9,7 @@ class PetDeleterView(ViewInterface):
 
     # Metodo abstrato para lidar com a requisicao HTTP
     def handle(self, http_request: HttpRequest) -> HttpResponse:
-        name = http_request.param['name']
+        name = http_request.params['name']
         self.controller.delete(name)
         
         return HttpResponse(status_code=204)

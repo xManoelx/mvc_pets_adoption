@@ -15,11 +15,11 @@ def test_list_pets():
 
 # Teste para deletar um pet
 @pytest.mark.skip(reason="interacao com o banco de dados")
-def test_delete_pets():
+def test_delete_pet():
     name = "belinha"
 
     repo = PetsRepository(db_connection_handler)
-    repo.delete_pets(name)
+    repo.delete_pet(name)
 
 # Teste para inserir uma pessoa
 @pytest.mark.skip(reason="interacao com o banco de dados")

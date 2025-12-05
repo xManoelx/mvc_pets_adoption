@@ -21,7 +21,7 @@ class PetsRepository(PetsRepositoryInterface):
                 return []
 
     # Funcao para deletar um pet pelo nome
-    def delete_pets(self, name: str) -> None:
+    def delete_pet(self, name: str) -> None:
         """Deleta um pet pelo nome"""
         with self.__db_connection as database:
             try:

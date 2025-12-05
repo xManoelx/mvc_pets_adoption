@@ -11,5 +11,5 @@ class PetsRepositoryInterface(ABC):
 
     # Funcao para deletar um pet pelo nome
     @abstractmethod
-    def delete_pets(self, name: str) -> None:
+    def delete_pet(self, name: str) -> None:
         """Deleta um pet pelo nome"""
