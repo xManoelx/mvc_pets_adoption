@@ -140,7 +140,7 @@ src/
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/your-username/pet-management-api.git
+git clone https://github.com/manoeldr/pet-management-api.git
 cd pet-management-api
 ```
 
@@ -464,10 +464,10 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 👤 Author
 
-**Your Name**
+**Manoel Antonio**
 
-- GitHub: [manoeldr](https://github.com/manoeldr)
-- LinkedIn: [Manoel Antonio][(https://www.linkedin.com/in/manoel-antonio-dutra-rodrigues-98b390202/)]
+- GitHub: [@manoeldr](https://github.com/manoeldr)
+- LinkedIn: [Manoel Antonio](https://www.linkedin.com/in/manoel-antonio-dutra-rodrigues-98b390202/)
 
 ## 🙏 Acknowledgments
 
